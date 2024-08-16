@@ -368,7 +368,7 @@
 				&.image-position-center {
 					.image {
 						img {
-							// ...
+							@include vendor('object-position', 'center');
 						}
 					}
 				}
@@ -465,6 +465,10 @@
 
 			// Size.
 				&.fullscreen {
+					min-height: 100vh;
+				}
+
+				&.midscreen {
 					min-height: 100vh;
 				}
 
